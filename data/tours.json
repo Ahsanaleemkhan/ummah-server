@@ -1,0 +1,162 @@
+[
+    {
+        "id": "TR001",
+        "name": "Istanbul City Explorer",
+        "destination": "Istanbul, Turkey",
+        "duration": "7 days",
+        "price": 1200,
+        "currency": "USD",
+        "type": "Cultural",
+        "highlights": [
+            "Hagia Sophia",
+            "Blue Mosque",
+            "Grand Bazaar",
+            "Bosphorus Cruise",
+            "Topkapi Palace"
+        ],
+        "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600",
+        "rating": 4.8,
+        "trending": true,
+        "description": "Discover the magic of Istanbul where East meets West."
+    },
+    {
+        "id": "TR002",
+        "name": "Moroccan Heritage Tour",
+        "destination": "Morocco",
+        "duration": "10 days",
+        "price": 1600,
+        "currency": "USD",
+        "type": "Cultural",
+        "highlights": [
+            "Marrakech Medina",
+            "Sahara Desert",
+            "Fes",
+            "Chefchaouen",
+            "Atlas Mountains"
+        ],
+        "image": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=600",
+        "rating": 4.7,
+        "trending": true,
+        "description": "Journey through the vibrant colors and rich culture of Morocco."
+    },
+    {
+        "id": "TR003",
+        "name": "Malaysia Adventure",
+        "destination": "Kuala Lumpur, Malaysia",
+        "duration": "8 days",
+        "price": 1100,
+        "currency": "USD",
+        "type": "Adventure",
+        "highlights": [
+            "Petronas Towers",
+            "Langkawi Island",
+            "Batu Caves",
+            "Cameron Highlands",
+            "Street Food Tour"
+        ],
+        "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600",
+        "rating": 4.6,
+        "trending": true,
+        "description": "Explore the diverse landscapes and culture of Malaysia."
+    },
+    {
+        "id": "TR004",
+        "name": "Egypt Pyramids & Nile",
+        "destination": "Cairo & Luxor, Egypt",
+        "duration": "9 days",
+        "price": 1400,
+        "currency": "USD",
+        "type": "Historical",
+        "highlights": [
+            "Great Pyramids",
+            "Sphinx",
+            "Nile Cruise",
+            "Valley of Kings",
+            "Egyptian Museum"
+        ],
+        "image": "https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=600",
+        "rating": 4.9,
+        "trending": true,
+        "description": "Walk in the footsteps of pharaohs along the ancient Nile."
+    },
+    {
+        "id": "TR005",
+        "name": "Dubai Luxury Experience",
+        "destination": "Dubai, UAE",
+        "duration": "5 days",
+        "price": 1800,
+        "currency": "USD",
+        "type": "Luxury",
+        "highlights": [
+            "Burj Khalifa",
+            "Desert Safari",
+            "Palm Jumeirah",
+            "Dubai Mall",
+            "Dhow Cruise"
+        ],
+        "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600",
+        "rating": 4.8,
+        "trending": false,
+        "description": "Experience the glamour and grandeur of Dubai."
+    },
+    {
+        "id": "TR006",
+        "name": "Jordan Historical Trail",
+        "destination": "Amman & Petra, Jordan",
+        "duration": "6 days",
+        "price": 950,
+        "currency": "USD",
+        "type": "Historical",
+        "highlights": [
+            "Petra",
+            "Dead Sea",
+            "Wadi Rum",
+            "Amman Citadel",
+            "Jerash"
+        ],
+        "image": "https://images.unsplash.com/photo-1579606032821-4e6161c81571?w=600",
+        "rating": 4.7,
+        "trending": false,
+        "description": "Explore the ancient wonders of the Hashemite Kingdom."
+    },
+    {
+        "id": "TR007",
+        "name": "Andalusia Islamic Heritage",
+        "destination": "Spain",
+        "duration": "8 days",
+        "price": 1500,
+        "currency": "USD",
+        "type": "Cultural",
+        "highlights": [
+            "Alhambra Palace",
+            "Cordoba Mosque",
+            "Seville",
+            "Granada",
+            "Toledo"
+        ],
+        "image": "https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?w=600",
+        "rating": 4.9,
+        "trending": true,
+        "description": "Discover the rich Islamic heritage of Southern Spain."
+    },
+    {
+        "id": "TR008",
+        "name": "Maldives Beach Retreat",
+        "destination": "Maldives",
+        "duration": "6 days",
+        "price": 2500,
+        "currency": "USD",
+        "type": "Relaxation",
+        "highlights": [
+            "Overwater Villa",
+            "Snorkeling",
+            "Halal Dining",
+            "Sunset Cruise",
+            "Spa"
+        ],
+        "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600",
+        "rating": 4.9,
+        "trending": false,
+        "description": "Halal-friendly tropical paradise in the Indian Ocean."
+    }
+]

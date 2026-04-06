@@ -1,0 +1,99 @@
+[
+    {
+        "id": "VS001",
+        "country": "Saudi Arabia",
+        "type": "Umrah Visa",
+        "processingTime": "3-5 business days",
+        "price": 75,
+        "currency": "USD",
+        "requirements": [
+            "Valid passport (6+ months)",
+            "Passport-size photo",
+            "Completed application form",
+            "Proof of accommodation",
+            "Return flight ticket"
+        ],
+        "validity": "30 days",
+        "description": "Electronic Umrah visa for pilgrims visiting Saudi Arabia."
+    },
+    {
+        "id": "VS002",
+        "country": "Turkey",
+        "type": "E-Visa",
+        "processingTime": "1-2 business days",
+        "price": 50,
+        "currency": "USD",
+        "requirements": [
+            "Valid passport (6+ months)",
+            "Digital photo",
+            "Email address",
+            "Credit/debit card"
+        ],
+        "validity": "90 days",
+        "description": "Electronic visa for tourism in Turkey."
+    },
+    {
+        "id": "VS003",
+        "country": "Malaysia",
+        "type": "eNTRI / eVISA",
+        "processingTime": "2-3 business days",
+        "price": 25,
+        "currency": "USD",
+        "requirements": [
+            "Valid passport (6+ months)",
+            "Return ticket",
+            "Hotel booking",
+            "Recent photo"
+        ],
+        "validity": "15-30 days",
+        "description": "Electronic visa for Malaysian tourism."
+    },
+    {
+        "id": "VS004",
+        "country": "Egypt",
+        "type": "E-Visa",
+        "processingTime": "5-7 business days",
+        "price": 45,
+        "currency": "USD",
+        "requirements": [
+            "Valid passport (6+ months)",
+            "Passport photo",
+            "Hotel reservation",
+            "Travel itinerary"
+        ],
+        "validity": "30 days",
+        "description": "Electronic visa for visiting Egypt."
+    },
+    {
+        "id": "VS005",
+        "country": "UAE",
+        "type": "Tourist Visa",
+        "processingTime": "3-4 business days",
+        "price": 90,
+        "currency": "USD",
+        "requirements": [
+            "Valid passport (6+ months)",
+            "Passport photo",
+            "Bank statement",
+            "Return ticket",
+            "Hotel booking"
+        ],
+        "validity": "30-90 days",
+        "description": "Tourist visa for visiting the United Arab Emirates."
+    },
+    {
+        "id": "VS006",
+        "country": "Jordan",
+        "type": "Visa on Arrival",
+        "processingTime": "Instant",
+        "price": 56,
+        "currency": "USD",
+        "requirements": [
+            "Valid passport (6+ months)",
+            "Return ticket",
+            "Sufficient funds"
+        ],
+        "validity": "30 days",
+        "description": "Visa on arrival for most nationalities visiting Jordan."
+    }
+]

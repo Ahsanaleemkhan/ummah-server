@@ -1,0 +1,182 @@
+[
+    {
+        "id": "UM001",
+        "name": "Premium Umrah Package - 14 Days",
+        "city": "Makkah & Medina",
+        "country": "Saudi Arabia",
+        "duration": "14 days",
+        "price": 2800,
+        "currency": "USD",
+        "type": "Premium",
+        "inclusions": [
+            "Return Flights",
+            "5-Star Hotel Makkah",
+            "5-Star Hotel Medina",
+            "Visa Processing",
+            "Airport Transfers",
+            "Guided Ziyarat",
+            "Meals Included"
+        ],
+        "hotel": "Hilton Towers Makkah + Oberoi Medina",
+        "groupSize": "15-20",
+        "departDate": "2026-04-01",
+        "image": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600",
+        "description": "Our most popular premium package with 5-star accommodation and full services."
+    },
+    {
+        "id": "UM002",
+        "name": "Economy Umrah Package - 10 Days",
+        "city": "Makkah & Medina",
+        "country": "Saudi Arabia",
+        "duration": "10 days",
+        "price": 1500,
+        "currency": "USD",
+        "type": "Economy",
+        "inclusions": [
+            "Return Flights",
+            "3-Star Hotel",
+            "Visa Processing",
+            "Airport Transfers",
+            "Guided Ziyarat"
+        ],
+        "hotel": "Dar Al Eiman Makkah + Rua Al Madinah",
+        "groupSize": "25-30",
+        "departDate": "2026-03-15",
+        "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600",
+        "description": "Affordable package with comfortable accommodation and essential services."
+    },
+    {
+        "id": "UM003",
+        "name": "VIP Umrah Package - 21 Days",
+        "city": "Makkah & Medina",
+        "country": "Saudi Arabia",
+        "duration": "21 days",
+        "price": 4500,
+        "currency": "USD",
+        "type": "VIP",
+        "inclusions": [
+            "Business Class Flights",
+            "5-Star Haram View Hotel",
+            "Private Transfers",
+            "Personal Guide",
+            "Visa Processing",
+            "Full Board Meals",
+            "Laundry Service"
+        ],
+        "hotel": "Swissotel Al Maqam + Shaza Al Madina",
+        "groupSize": "5-8",
+        "departDate": "2026-05-01",
+        "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7de?w=600",
+        "description": "Ultimate VIP experience with business class flights and Haram-view suites."
+    },
+    {
+        "id": "UM004",
+        "name": "Ramadan Special Umrah - 15 Days",
+        "city": "Makkah & Medina",
+        "country": "Saudi Arabia",
+        "duration": "15 days",
+        "price": 3200,
+        "currency": "USD",
+        "type": "Premium",
+        "inclusions": [
+            "Return Flights",
+            "4-Star Hotel",
+            "Visa Processing",
+            "Iftar & Suhoor",
+            "Airport Transfers",
+            "Guided Ziyarat"
+        ],
+        "hotel": "Le Méridien Makkah + Crowne Plaza Medina",
+        "groupSize": "20-25",
+        "departDate": "2026-03-01",
+        "image": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=600",
+        "description": "Special Ramadan package to experience the holy month in Makkah."
+    },
+    {
+        "id": "UM005",
+        "name": "Family Umrah Package - 12 Days",
+        "city": "Makkah & Medina",
+        "country": "Saudi Arabia",
+        "duration": "12 days",
+        "price": 2200,
+        "currency": "USD",
+        "type": "Family",
+        "inclusions": [
+            "Return Flights",
+            "Family Room Hotels",
+            "Visa Processing",
+            "Kid-Friendly Transfers",
+            "Guided Ziyarat",
+            "Halal Meals"
+        ],
+        "hotel": "Jabal Omar Marriott + Crowne Plaza Medina",
+        "groupSize": "Family (up to 6)",
+        "departDate": "2026-06-15",
+        "image": "https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?w=600",
+        "description": "Family-oriented package with spacious rooms and child-friendly amenities."
+    },
+    {
+        "id": "UM006",
+        "name": "Weekend Umrah - 5 Days",
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "duration": "5 days",
+        "price": 900,
+        "currency": "USD",
+        "type": "Economy",
+        "inclusions": [
+            "Return Flights",
+            "3-Star Hotel",
+            "Visa Processing",
+            "Airport Transfers"
+        ],
+        "hotel": "Dar Al Eiman Royal",
+        "groupSize": "30-40",
+        "departDate": "2026-04-10",
+        "image": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600",
+        "description": "Quick and affordable Umrah trip for busy professionals."
+    },
+    {
+        "id": "UM007",
+        "name": "Luxury Umrah from London - 14 Days",
+        "city": "Makkah & Medina",
+        "country": "Saudi Arabia",
+        "duration": "14 days",
+        "price": 3500,
+        "currency": "GBP",
+        "type": "Premium",
+        "inclusions": [
+            "Direct Flights from LHR",
+            "5-Star Hotels",
+            "Visa Processing",
+            "Private Guide",
+            "Full Board"
+        ],
+        "hotel": "Pullman Zamzam + Shaza Al Madina",
+        "groupSize": "10-15",
+        "departDate": "2026-07-01",
+        "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600",
+        "description": "Premium package departing from London with direct Saudi Airlines flights."
+    },
+    {
+        "id": "UM008",
+        "name": "Student Umrah Package - 7 Days",
+        "city": "Makkah & Medina",
+        "country": "Saudi Arabia",
+        "duration": "7 days",
+        "price": 750,
+        "currency": "USD",
+        "type": "Budget",
+        "inclusions": [
+            "Return Flights",
+            "Budget Hotel",
+            "Visa Processing",
+            "Shared Transfers"
+        ],
+        "hotel": "Budget Hotels near Haram",
+        "groupSize": "40-50",
+        "departDate": "2026-08-01",
+        "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7de?w=600",
+        "description": "Affordable student package with shared accommodation."
+    }
+]

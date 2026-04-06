@@ -1,0 +1,28 @@
+{
+  "brandName": "Ummah Travel",
+  "supportEmail": "info@ummahtravel.com",
+  "supportPhone": "+92 300 123 4567",
+  "whatsapp": "+92 300 123 4567",
+  "defaultCurrency": "USD",
+  "defaultLocale": "en-PK",
+  "booking": {
+    "allowInstantBooking": true,
+    "requireManualApproval": false,
+    "maxGroupSize": 50,
+    "confirmationWindowMinutes": 15
+  },
+  "features": {
+    "flights": true,
+    "hotels": true,
+    "tours": true,
+    "umrah": true,
+    "visas": true,
+    "blog": true
+  },
+  "seo": {
+    "siteTitle": "Ummah Travel",
+    "metaDescription": "Ummah Travel offers flights, hotels, tours, Umrah and visa assistance.",
+    "defaultOgImage": "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=1200"
+  },
+  "updatedAt": "2026-04-06T00:00:00.000Z"
+}

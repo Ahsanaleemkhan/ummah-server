@@ -1,0 +1,203 @@
+[
+    {
+        "id": "HT001",
+        "name": "Makkah Hilton Towers",
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "address": "Abraj Al-Bait, King Abdul Aziz Endowment",
+        "rating": 5,
+        "pricePerNight": 220,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Pool",
+            "Spa",
+            "Restaurant",
+            "Haram View",
+            "Room Service"
+        ],
+        "distanceToHaram": "200m",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600",
+        "description": "Luxury hotel with direct view of Masjid Al-Haram, perfect for pilgrims."
+    },
+    {
+        "id": "HT002",
+        "name": "Medina Oberoi",
+        "city": "Medina",
+        "country": "Saudi Arabia",
+        "address": "Central Area, Near Masjid An-Nabawi",
+        "rating": 5,
+        "pricePerNight": 195,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Restaurant",
+            "Prayer Room",
+            "Shuttle Service",
+            "Room Service"
+        ],
+        "distanceToHaram": "350m",
+        "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600",
+        "description": "Elegant 5-star hotel steps away from the Prophet's Mosque."
+    },
+    {
+        "id": "HT003",
+        "name": "Dar Al Eiman Royal",
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "address": "Ibrahim Al Khalil Street",
+        "rating": 4,
+        "pricePerNight": 140,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Restaurant",
+            "Laundry",
+            "24h Reception"
+        ],
+        "distanceToHaram": "500m",
+        "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600",
+        "description": "Comfortable and affordable hotel for Umrah pilgrims."
+    },
+    {
+        "id": "HT004",
+        "name": "Pullman Zamzam Makkah",
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "address": "Abraj Al Bait Complex",
+        "rating": 5,
+        "pricePerNight": 280,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Spa",
+            "Gym",
+            "Restaurant",
+            "Haram View",
+            "Concierge"
+        ],
+        "distanceToHaram": "100m",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600",
+        "description": "Premium hotel offering unparalleled proximity and views of Masjid Al-Haram."
+    },
+    {
+        "id": "HT005",
+        "name": "Shaza Al Madina",
+        "city": "Medina",
+        "country": "Saudi Arabia",
+        "address": "King Faisal Road",
+        "rating": 5,
+        "pricePerNight": 175,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Restaurant",
+            "Spa",
+            "Business Center",
+            "Shuttle"
+        ],
+        "distanceToHaram": "400m",
+        "image": "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=600",
+        "description": "Arabesque-inspired luxury hotel near Masjid An-Nabawi."
+    },
+    {
+        "id": "HT006",
+        "name": "Le Méridien Makkah",
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "address": "Al Haram District",
+        "rating": 4,
+        "pricePerNight": 155,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Pool",
+            "Gym",
+            "Restaurant",
+            "Kids Area"
+        ],
+        "distanceToHaram": "800m",
+        "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600",
+        "description": "Modern hotel with excellent facilities for families."
+    },
+    {
+        "id": "HT007",
+        "name": "Rua Al Madinah Hotel",
+        "city": "Medina",
+        "country": "Saudi Arabia",
+        "address": "Near Bab Al Salam",
+        "rating": 3,
+        "pricePerNight": 85,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Restaurant",
+            "Laundry",
+            "24h Reception"
+        ],
+        "distanceToHaram": "600m",
+        "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600",
+        "description": "Budget-friendly option with great location."
+    },
+    {
+        "id": "HT008",
+        "name": "Swissotel Al Maqam Makkah",
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "address": "Abraj Al Bait, Clock Tower",
+        "rating": 5,
+        "pricePerNight": 310,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Spa",
+            "Gym",
+            "Restaurant",
+            "Haram View",
+            "Butler Service"
+        ],
+        "distanceToHaram": "50m",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600",
+        "description": "Ultra-luxury hotel at the iconic Clock Tower with closest access to Haram."
+    },
+    {
+        "id": "HT009",
+        "name": "Crowne Plaza Medina",
+        "city": "Medina",
+        "country": "Saudi Arabia",
+        "address": "Central Medina",
+        "rating": 4,
+        "pricePerNight": 130,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Restaurant",
+            "Meeting Rooms",
+            "Gym",
+            "Room Service"
+        ],
+        "distanceToHaram": "450m",
+        "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600",
+        "description": "Reliable and comfortable stay with professional service."
+    },
+    {
+        "id": "HT010",
+        "name": "Jabal Omar Marriott",
+        "city": "Makkah",
+        "country": "Saudi Arabia",
+        "address": "Jabal Omar Development",
+        "rating": 5,
+        "pricePerNight": 250,
+        "currency": "USD",
+        "amenities": [
+            "Free WiFi",
+            "Pool",
+            "Spa",
+            "Multiple Restaurants",
+            "Shopping Mall Access"
+        ],
+        "distanceToHaram": "300m",
+        "image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600",
+        "description": "Brand new luxury hotel in the Jabal Omar complex."
+    }
+]
