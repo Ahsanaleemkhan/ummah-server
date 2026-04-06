@@ -1,3 +1,4 @@
+const bcrypt = require('bcryptjs');
 const { getDbOrNull } = require('../config/database');
 
 const memoryUsers = [];
@@ -46,7 +47,99 @@ async function createUser(userPayload) {
   return nextUser;
 }
 
+async function buildAdminPasswordHash() {
+  const configuredHash = String(process.env.ADMIN_PASSWORD_HASH || '').trim();
+  if (configuredHash) {
+    return configuredHash;
+  }
+
+  const rawAdminPassword = String(process.env.ADMIN_PASSWORD || '').trim();
+  if (!rawAdminPassword) {
+    return '';
+  }
+
+  return bcrypt.hash(rawAdminPassword, 10);
+}
+
+async function upsertAdminUserFromEnv() {
+  const adminEmail = String(process.env.ADMIN_EMAIL || 'admin@ummahtravel.com').trim().toLowerCase();
+  const adminName = String(process.env.ADMIN_NAME || 'Super Admin').trim() || 'Super Admin';
+  const now = new Date().toISOString();
+
+  if (!adminEmail) {
+    return { seeded: false, reason: 'missing-admin-email' };
+  }
+
+  const collection = await getUserCollection();
+
+  if (collection) {
+    const existingAdmin = await collection.findOne({ emailLower: adminEmail });
+
+    if (existingAdmin) {
+      await collection.updateOne(
+        { emailLower: adminEmail },
+        {
+          $set: {
+            id: existingAdmin.id || 'ADM001',
+            name: adminName,
+            role: 'admin',
+            updatedAt: now,
+          },
+        },
+      );
+
+      return { seeded: false, reason: 'already-exists', email: adminEmail };
+    }
+
+    const adminPasswordHash = await buildAdminPasswordHash();
+    if (!adminPasswordHash) {
+      return { seeded: false, reason: 'missing-admin-password' };
+    }
+
+    await collection.insertOne({
+      id: 'ADM001',
+      name: adminName,
+      email: adminEmail,
+      emailLower: adminEmail,
+      password: adminPasswordHash,
+      role: 'admin',
+      createdAt: now,
+      updatedAt: now,
+    });
+
+    return { seeded: true, reason: 'created', email: adminEmail };
+  }
+
+  const existingMemoryAdmin = memoryUsers.find((user) => user.emailLower === adminEmail);
+  if (existingMemoryAdmin) {
+    existingMemoryAdmin.name = adminName;
+    existingMemoryAdmin.role = 'admin';
+    existingMemoryAdmin.updatedAt = now;
+
+    return { seeded: false, reason: 'already-exists', email: adminEmail };
+  }
+
+  const adminPasswordHash = await buildAdminPasswordHash();
+  if (!adminPasswordHash) {
+    return { seeded: false, reason: 'missing-admin-password' };
+  }
+
+  memoryUsers.push({
+    id: 'ADM001',
+    name: adminName,
+    email: adminEmail,
+    emailLower: adminEmail,
+    password: adminPasswordHash,
+    role: 'admin',
+    createdAt: now,
+    updatedAt: now,
+  });
+
+  return { seeded: true, reason: 'created', email: adminEmail };
+}
+
 module.exports = {
   createUser,
   findUserByEmail,
+  upsertAdminUserFromEnv,
 };

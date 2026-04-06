@@ -3,6 +3,7 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 const { connectMongo, ensureMongoIndexes, getMongoConfig, isMongoConnected } = require('./config/database');
+const { upsertAdminUserFromEnv } = require('./utils/userStore');
 
 const app = express();
 const DEFAULT_CORS_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000'];
@@ -80,6 +81,16 @@ const startServer = async () => {
 
   if (mongoStatus.connected) {
     await ensureMongoIndexes();
+    const adminSeedStatus = await upsertAdminUserFromEnv();
+
+    if (adminSeedStatus.seeded) {
+      console.log(`👤 Admin user seeded: ${adminSeedStatus.email}`);
+    } else if (adminSeedStatus.reason === 'already-exists') {
+      console.log(`👤 Admin user already exists: ${adminSeedStatus.email}`);
+    } else {
+      console.warn(`⚠️  Admin seeding skipped (${adminSeedStatus.reason})`);
+    }
+
     console.log(`🗄️  MongoDB connected: ${mongoConfig.uri}/${mongoConfig.dbName}`);
   } else {
     console.warn(`⚠️  MongoDB unavailable (${mongoStatus.reason}). Falling back to JSON file snapshots.`);
