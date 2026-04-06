@@ -5,11 +5,41 @@ require('dotenv').config();
 const { connectMongo, ensureMongoIndexes, getMongoConfig, isMongoConnected } = require('./config/database');
 
 const app = express();
+const DEFAULT_CORS_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000'];
+
+const parseCorsOrigins = () => {
+  const rawOrigins = String(process.env.CORS_ORIGINS || '').trim();
+
+  if (!rawOrigins) {
+    return DEFAULT_CORS_ORIGINS;
+  }
+
+  return rawOrigins
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+};
+
+const corsOrigins = parseCorsOrigins();
+const allowAllCorsOrigins = corsOrigins.includes('*');
+const corsCredentials = String(process.env.CORS_CREDENTIALS || 'true').toLowerCase() !== 'false';
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
-  credentials: true,
+  origin: (origin, callback) => {
+    if (!origin) {
+      callback(null, true);
+      return;
+    }
+
+    if (allowAllCorsOrigins || corsOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+
+    callback(null, false);
+  },
+  credentials: corsCredentials,
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -56,6 +86,9 @@ const startServer = async () => {
   }
 
   app.listen(PORT, () => {
+    const corsValue = allowAllCorsOrigins ? '*' : corsOrigins.join(', ');
+
+    console.log(`🌐 CORS origins: ${corsValue}`);
     console.log(`🚀 Ummah Travel API running on port ${PORT}`);
   });
 };
